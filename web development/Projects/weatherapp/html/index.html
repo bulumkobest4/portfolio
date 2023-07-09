@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="shortcut icon" href="/images/sun.png" type="image/x-icon">
+    <script src="/js/index.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <div class="input">
+            <input type="text" id="location" placeholder="Search here...">
+        </div>
+        <div class="search-button">
+            <button id="search-button">Search</button>
+        </div>
+    </header>
+    <main>
+        <div class="temp-container">
+            <div class="top">
+                <em id="city"></em>
+                <em id="date"></em>
+            </div>
+            <p id="temp"></p>
+            <div class="extra">
+                <img src="" alt="" id="img">
+                <span id="type"></span>        
+            </div>
+            <div class="buttons">
+                <button id="yesterday">Yesterday</button>
+                <button id="tomorrow">Tomorrow</button>
+            </div>
+        </div>
+        
+    </main>
+    
+</body>
+</html>
