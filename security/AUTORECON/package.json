@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dns-express": "^1.4.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "subdomain": "^1.2.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "autorecon",
+  "version": "1.0.0",
+  "main": "server.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

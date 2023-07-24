@@ -1,0 +1,44 @@
+1. viewport tells google if page is mobile friendly or not (responsive -- used when ranking )
+2. title tags are important in ranking, should contain keywords
+3. description should be unique and contain keywords
+4. urls need to be clear
+5. author meta tag
+
+* FAVICON FOR UX
+* MINIFY AND COMPRESS FILES AND IMAGES FOR BETTER PERFORMANCE
+* ALT TEXT HELP ENGINES IN RESULTS
+* ADD TITLES TO <a> tags
+*************************************************************************
+*************************************************************************
+FACTORS FOR SEO
+
+1. Keyword in Subdomain
+2. Private WhoIs information may be a sign of “something to hide”
+3.  Having a Country Code Top Level Domain (.cn, .pt, .ca) can sometimes help the site rank for that particular country… but it can limit the site’s ability to rank globally.
+4. Keyword in Title Tag
+5. Title Tag Starts with Keyword
+6. Keyword in Description Tag
+7. Keyword Appears in H1 Tag
+8. How often does a certain word appear in a document?”. The more often that word appears on a page, the more likely it is that the page is about that word.
+9. Content with more words can cover a wider breadth and are likely preferable in the algorithm compared to shorter, superficial articles
+10.  Using a linked table of contents can help Google better understand your page’s content
+11. Latent Semantic Indexing Keywords in Content (LSI)
+12. LSI Keywords in Title and Description Tags
+13. pages that cover every angle likely have an edge vs. pages that only cover a topic partially.
+14. Page Loading Speed via HTML
+15. Use of AMP
+16. Entity Match
+17. Google Hummingbird
+18. Identical content on the same site (even slightly modified) can negatively influence a site’s search engine visibility
+19. Rel=Canonical: When used properly, use of this tag may prevent Google from penalizing your site for duplicate content.
+20. Image Optimization: Images send search engines important relevancy signals through their file name, alt text, title, description and caption.
+21. Content Recency
+22. The significance of edits and changes also serves as a freshness factor. Adding or removing entire sections is more significant than switching around the order of a few words or fixing a typo.
+23. Historical Page Updates
+24. Keyword Prominence
+25.
+26.
+27.
+28.
+29.
+30.

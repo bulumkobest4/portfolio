@@ -1,0 +1,10 @@
+Keep sentences as short as possible
+Avoid dashes. Instead of writing 1-3, write 1 to 3
+Avoid abbreviations. Instead of writing Feb, write February
+Avoid slang words
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.
+The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).
+Create Good Link Text
+The <button> element should be used for any interaction that performs an action on the current page. The <a> element should be used for any interaction that navigates to another view.
+When we use more than one type of landmark, like multiple <nav>s like in this example, we must label each of them. This is done with the attribute aria-label.
+Open the link in the current window. It is not recommended to open links in a new window.

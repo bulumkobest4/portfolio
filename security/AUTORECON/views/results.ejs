@@ -1,0 +1,27 @@
+<%- include('./partials/head') %>
+<%- include('./partials/inheader') %>
+
+<div class="container">
+    <p>Found <%= resultArr.length %> subdomains</p>
+    <div class="accordion" id="acc">
+        <% resultArr.forEach((domain) => { %>
+            <div class="accordion-item mt-3">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target=<%= '#'+domain.name %>><%= domain.name %></button>
+                </h2>
+                <div class="accordion-collapse collapse"data-bs-parent="#acc" id=<%= domain.name %>>
+                    <div class="accordion-body">
+                        <% domain.ip.forEach((ip) => { %>
+                            <p><%= ip %></p>
+                        <% }) %>
+                    </div>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+
+</div>
+
+
+</body>
+</html>

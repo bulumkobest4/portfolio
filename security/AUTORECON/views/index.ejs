@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--Accessibility-->
+<html lang="en">
+<head>
+    <!--SEO-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Recon automation tool for gathering subdomains and dns info">
+    <meta name="author" content="Bulumko Jele">
+    <meta name="robots" content="follow">
+    <title>Information gathering tool - AutoRecon.com</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- Bootstrap cdn-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous" defer></script>
+</head>
+<body>
+    <%- include('./partials/outheader') %>
+    <main class="container">
+        <p class="h1 text-center m-3">Automate information gathering for your site.</p>
+        <div class="bg-light text-primary text-center">
+            <p class="fs-5">Spend less time on the terminal, less time gathering info.</p>
+            <p class="fs-5">For developers and hackers.</p>
+        </div>
+        <section class="d-flex justify-content-around flex-wrap flex-xl-nowrap m-4">
+            <div class="text-center mb-2 border p-2">
+                <p class="fs-3">DomainEx</p>
+                <img src="./images/subdomain.png" alt="Subdomain enumeration image" class="mb-3" width="100px">
+                <p>Get subdomains using <a href="">VirusTotal</a> and <a href="">Crt.sh</a> .</p>
+            </div>
+            <div class="text-center mb-2 border p-2">
+                <p class="fs-3">DomainPulse</p>
+                <img src="./images/alive.png" alt="Probe for alive domains image" class=" mb-3" width="100px">
+                <p>Ping hosts to see if they are up.</p>
+            </div>
+            <div class="text-center mb-2 border p-2">
+                <p class="fs-3">DomainDNS</p>
+                <img src="./images/dns.png" alt="Find dns info image" class=" mb-3" width="100px">
+                <p>Get dns info using the <code>nodejs dns module</code>.</p>
+            </div>
+        </section>
+        <section class="container text-center">
+            <button class="btn bg-primary text-light"><a href="/home" class="text-decoration-none text-light">GET STARTED</a></button>
+        </section>
+    </main>
+    <footer class="bg-secondary mt-2 p-2">
+        <p class="fs-5 text-center vertical-align-center">Created by Bulumko Jele, 2023</p>
+    </footer>
+    
+</body>
+</html>

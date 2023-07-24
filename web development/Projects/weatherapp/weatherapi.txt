@@ -1,9 +1,0 @@
-* Uses ipapi API to get user location
-	- get location name
-* Uses weatherapi API to get weather info
-	- get location name from input and ipapi results
-	- get current, yesterday and tomorrow
-	- default is current location, current info
-	- yesterday gets current - 1 average
-	- tomorrow gets current + 1 average
-	- populate the dom with results

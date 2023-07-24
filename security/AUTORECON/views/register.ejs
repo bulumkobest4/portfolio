@@ -1,0 +1,33 @@
+<%- include('./partials/head')%>
+<body>
+    <%- include('./partials/outheader') %>
+
+    <main class="container">
+        <p class="fs-5">Register an account below</p>
+        <form action="/register" method="post" class="form">
+            <div class="mt-2">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" name="name" id="name" class="form-control" required>
+            </div>
+            <div class="mt-2">
+                <label for="name" class="form-label">Email</label>
+                <input type="email" name="email" id="email" class="form-control" required>
+            </div>
+            <div class="mt-2">
+                <label for="name" class="form-label">Password</label>
+                <input type="password" name="password" id="password" class="form-control" required>
+            </div>
+            <div class="mt-2">
+                <button class="btn btn-primary text-light form-control">Register</button>
+            </div>
+
+        </form>
+        <p class="fs-5 text-center mt-4">Or</p>
+        <p class="fs-5 text-center"><a href="/login">Login</a></p>
+
+    </main>
+
+    <%- include('./partials/footer') %>
+    
+</body>
+</html>

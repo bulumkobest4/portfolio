@@ -1,0 +1,27 @@
+<header class="d-flex align-items-center container-fluid justify-content-between mb-4 mt-2">
+    <div class="logo">
+        <a href="/" class="text-decoration-none fs-4">
+            <img src="./images/logo.png" alt="AutoRecon Logo">
+            <span>AutoRecon</span>
+        </a>
+    </div>
+    <nav class="navbar d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+        <a href="/profile" class="p-2 text-decoration-none">Profile</a>
+        <a href="/logout" class="p-2 text-decoration-none">Logout</a>
+    </nav>
+    <div class="d-block d-md-none d-xl-none d-lg-none d-xxl-none">
+        <button class="fs-3 btn position-absolute top-0 end-0 " data-bs-toggle="offcanvas" data-bs-target="#expand">&#9776</button>
+    </div>
+    <div class="d-block d-md-none d-xl-none d-lg-none d-xxl-none">
+        <div class="offcanvas offcanvas-start "   id="expand">
+            <div class="offcanvas-header d-flex justify-content-between align-items-center">
+              <p class=" offcanvas-title fs-2">Navigation</p>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body d-flex flex-column align-items-center">
+                <a href="/profile" class="p-2 fs-4 text-decoration-none">Profile</a>
+                <a href="/logout" class="p-2 fs-4 text-decoration-none">Logout</a>
+            </div>
+          </div>
+    </div>
+</header>

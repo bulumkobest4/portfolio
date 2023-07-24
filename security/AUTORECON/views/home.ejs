@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/head') %>
+<body>
+    <%- include('./partials/inheader') %>
+    <main class="container mb-5">
+
+        <p class="fs-4">Hi, welcome to AutoRecon.</p>
+        <p class="fs-5">Write your targets manually, paste, or upload a list of urls.</p>
+        <p class="fs-5 text-secondary">Rules</p>
+        <p class="fs-5 m-0">1. Remove https:// and everything after .com</p>
+        <p class="fs-5">2. Use the cors server <a href="https://cors-anywhere.herokuapp.com/corsdemo">here</a></p>
+        <form action="/results" id="form" method="post" class="form bg-light mb-3 pt-2 pb-3">
+            <div class="container mb-2">
+                <label for="domain" class="form-label fs-5">Enter domain/s</label>
+                <textarea name="targets" id="domain" rows="3" class="form-control"></textarea>
+            </div>
+            <div class="container mb-2">
+                <label for="upload" class="form-label fs-5">Upload a list <code>(coming soon)</code></label>
+            <input disabled type="file" name="" id="upload" class="form-control">
+            </div>
+            <div class="container">
+                <input type="submit" value="Search" class="btn form-control bg-primary text-light fs-5 d-md-block">
+            </div>
+
+        </form>
+    </main>
+
+    <%- include('./partials/footer') %>
+    
+</body>
+</html>
