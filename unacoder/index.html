@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Encode and decode many types of cryptography"
+    />
+    <meta name="author" content="Bulumko Jele" />
+    <title>Unacoder - Encryption and decryption tool</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Tektur&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Tektur", cursive;
+      }
+      body {
+        background-color: rgb(82, 109, 132);        
+      }
+      a{
+        text-decoration: none;
+        color: gainsboro;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(39, 55, 77);
+        padding: 1rem;
+        color: white;
+        
+      }
+      header span {
+        font-size: 1.2rem;
+      }
+      header nav a {
+        padding: .5rem;
+        margin: .5rem 0;
+      }
+      #type-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 1rem 0;
+      }
+      #type-container .convert {
+        margin: 1rem 0;
+      }
+      #payload-container {
+        display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      section:nth-of-type(2){
+        text-align: center;
+        margin: 1rem 0 0 0 ;
+      }
+      textarea {
+        padding: 1rem;
+        color: grey;
+        background-color: rgb(231, 229, 229);
+      }
+      button {
+        margin: .5rem 0;
+        padding: 1rem;
+        font-size: 1.1rem;
+        background-color: rgb(39, 55, 77);
+        color: white;
+        border: none;
+        outline: none;
+      }
+      footer{
+        background-color: rgb(221,230,237);
+        text-align: center;
+        padding: 1rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <span>Unacoder</span>
+    </header>
+    <main>
+      <section>
+        <div id="type-container">
+          <label for="to">Convert to which format</label>
+          <select name="to" id="to" required>
+            <option value=""></option>
+            <option value="base64">Base64</option>
+            <option value="html">Html Encoding</option>
+            <option value="hex">Hex</option>
+            <option value="json">JSON</option>
+          </select>
+        </div>
+        <div id="payload-container">
+          <textarea
+            id="payloadValue"
+            cols="50"
+            rows="10"
+            placeholder="Enter text to encode..."
+          ></textarea>
+          <button id="generate">Generate</button>
+        </div>
+      </section>
+      <section>
+        <textarea id="output" cols="50" rows="5" placeholder="Generated text will appear here..." disabled></textarea>
+        <br>
+        <button id="copy">Copy</button>
+      </section>
+    </main>
+
+    <footer>
+        <p>Created by Bulumko Jele, 2023</p>
+    </footer>
+    <script>
+      let outputV = document.getElementById("to");
+      let payload = document.getElementById("payloadValue");
+      let output = document.getElementById("output");
+      const generatebtn = document.getElementById("generate");
+      const copybtn = document.getElementById("copy");
+      const column = document.querySelectorAll('textarea')
+      if(window.innerWidth <= 464){
+        for(let c of column){
+            c.cols = 40
+        }
+      }
+      if(window.innerWidth <= 390){
+        for(let c of column){
+            c.cols = 30
+        }
+      }
+      if(window.innerWidth <= 290){
+        for(let c of column){
+            c.cols = 20
+            c.rows = 5
+        } 
+      }
+      generatebtn.addEventListener("click", async () => {
+        if (outputV.value !== "") {
+          switch (outputV.value) {
+            case "base64": output.innerText = btoa(payload.value);
+            break;
+            case 'hex' : output.innerText = stringToHex(payload.value)
+            break;
+            case 'html' : output.innerText = encodeURIComponent(payload.value)
+            break;
+            case 'json' : output.innerText = JSON.stringify(payload.value)
+            break;
+          }
+        } else {
+          outputV.style.border = "2px solid red";
+        }
+      });
+      function stringToHex(inputString) {
+        let hexResult = "";
+        for (const char of inputString) {
+          const charCode = char.charCodeAt(0);
+          hexResult += charCode.toString(16);
+        }
+        return hexResult;
+      }
+      copybtn.addEventListener('click',()=>{
+        output.disabled = false
+        output.select()
+        document.execCommand('copy')
+        output.disabled = true
+      })
+    </script>
+  </body>
+</html>
