@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest news and prices for market traders, with a journal to record entries.">
+    <meta name="author" content="Bulumko Jele">
+    <meta name="robots" content="follow">
+    <title>MarketLand</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="newprice.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="name">
+            <div class="image">
+                <img src="logo.png" alt="">
+            </div>
+            <div class="appname">
+                MarketLand
+            </div>
+        </div>
+        <div class="navigation">
+            <a href="/">Home</a>
+            <a href="/prices.html">Market Prices</a>
+            <a href="/journal.html">Journal</a>
+        </div>
+    </header>
+    <main>
+        <div class="forex">
+            <div class="prices">
+                <table style="color: white;" id="table">
+                    <caption>Forex Market Prices</caption>
+                    <tr>
+                        <th>Pair</th>
+                        <th>Current Price</th>
+                        <th>High</th>
+                        <th>Low</th>
+                    </tr>
+                </table>
+            </div>
+            <div id="chart" style="color: aliceblue;">
+                <div class="top-text">
+                </div>
+                <div id="chartContainer"></div>
+                <div class="related-news">
+                    
+                </div>
+            </div>
+                
+        </div>
+    </main>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+    
+</body>
+</html>

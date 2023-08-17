@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: url('background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    
+}
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.name{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.appname{
+    font-size: 1.2rem;
+    color: gray;
+}
+.navigation{
+    text-align: center;
+}
+.navigation a{
+    text-decoration: none;
+    padding: .3rem;
+    margin: 0 .2rem;
+    color: gray;
+}
+.navigation a:hover{
+    color: green;
+    padding: .3rem;
+    margin: 0 .2rem;
+}
+
+.top{
+    display: flex;
+    overflow: hidden;
+}
+.top span{
+
+    padding: .5rem;
+}
+.first{
+    color: rgb(233, 232, 232);
+    padding: 1rem;
+    height: 80vh;
+}
+.first p{
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+.first ul{
+  margin-bottom: 3rem;
+  width: fit-content;
+  background-color: rgba(109, 107, 107, .2);
+  padding: .5rem ;
+    
+}
+.first ul li{
+    margin: .5rem;
+}
+.links{
+    position: relative;
+}
+.links a{
+    text-decoration: none;
+    background-color: rgba(87, 179, 87,.3);
+    color: white;
+    padding: .3rem;
+    margin: .3rem .2rem  0;
+}
+
+table {
+    border-spacing: 1rem;
+}
+tr{
+    text-align: center;
+}
+
+.forex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+}
+.forex #chart {
+    width: 600px;
+}
+.forex #chart #chartContainer{
+    height:55vh;
+    margin: 1rem 0;
+    width: 100%;
+    
+}
+.journal-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.entry{
+    
+    padding: 1rem;
+    text-align: center;
+}
+.entry div{
+    margin: .5rem 0;
+    
+}
+.entry div input{
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+.entry button{
+    background-color: rgba(0,255,0,.4);
+    color: white;
+    border: none;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
